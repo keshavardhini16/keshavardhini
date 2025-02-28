@@ -1,0 +1,171 @@
+body{
+    background: #fffbd5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b20a2c, #fffbd5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b20a2c, #fffbd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #222;
+    font-family: sans-serif;
+    padding:0;
+    margin:0;
+}
+
+.body{
+    max-width: 900px;
+    background-color: #eeeed9;
+    margin: auto;
+    margin-top: 20px;  
+    
+}
+
+.header{
+    display: flex;
+}
+
+.header > div {
+    width: 50%;
+    padding: 20px;
+}
+
+.logo > img{
+    max-width: 500px;;
+}
+
+.instructions :first-child {
+    margin-top: 50px;
+}
+
+.instructions > p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    width: 100%;
+    background-color: rgb(26, 24, 24);
+    text-align: center;
+    padding: 10px;
+}
+
+ul > li{
+    display:inline;
+    padding:30px;
+    font-size: 20px;
+    color: #eeeed9;
+}
+
+.levelActive{
+    background-color: #eeeed9;
+    padding: 30px;
+    color: rgb(26, 24, 24);
+    transition: 1s;
+}
+
+/*ul > li :hover{
+    background-color: beige;
+    padding: 30px 5px 30px 5px;
+    color: rgb(26, 24, 24);
+    transition: 1s;
+}*/
+
+a {
+    color: #eeeed9; 
+    /*font-family: arial;*/
+    text-decoration: none;
+}
+
+.level > h2{
+    text-align: center;
+}
+.game {
+    margin-top: 20px;
+    padding-bottom: 50px;;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.rectangulo{
+    text-align: center;
+    height: 100px;
+    width: 200px;
+    
+    background: #ccc;
+    margin-top:30px;
+    outline: dashed;
+}
+
+.rectangulo > h2{
+    margin: auto;
+    margin-top: 35px;
+}
+.rectangulo > h4{
+    margin-top: 100px;;
+}
+
+.circulo{
+    border-radius: 50%;
+    padding: 40px;
+    margin: 10px;
+    background: #f00;
+    display: inline-block;
+}
+
+.footer{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+#credits{
+    text-align: center;
+    font-size: 14px;
+}
+
+.modal{
+    max-width: 400px;
+    max-height: 200px;
+    position: fixed;
+    margin: 10% auto;
+    left: 0;
+    right: 0;
+    padding: 30px 50px 50px 50px;
+    background-color: rgb(202, 199, 199);
+    text-align: center; 
+    border: rgb(54, 53, 53) 10px solid;   
+}
+.modal > h1{
+    color:rgb(54, 53, 53)
+}
+.modal > p {
+    font-size: 20px;
+}
+.modal > button{
+    padding: 10px 30px 10px 30px;
+    border: none;
+    border-radius: 10%;
+    margin-top: 20px;
+}
+
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+    animation: aparecer .3s;
+}
+
+
+@keyframes aparecer {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
